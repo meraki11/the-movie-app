@@ -1,25 +1,40 @@
-import logo from './logo.svg';
+import React from 'react';
+// import MovieList from './Components/MovieList';
+import Movie from './Components/Movie';
+import movieData from './Components/movieData';
 import './App.css';
 
+//each component to render on screen should be in here, like a table of contents
 function App() {
+  const movieComponents = movieData.map(movie => 
+    <Movie key={movie.id} title={movie.title} 
+    imgUrl={movie.imgUrl} synopsis={movie.synopsis} 
+    rating={movie.rating} />
+  ) 
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {movieComponents}
     </div>
-  );
+  )
+  
 }
 
+  
+  
+  
+  
+  // return (
+  //   <div className="MovieApp">
+  //     <h1>Movie Review App Title</h1>
+  //     <Movie />
+  //     <Movie />
+  //     <Movie />
+
+      
+  //   </div>
+  // );
+
+
 export default App;
+/* <MovieList /> */
