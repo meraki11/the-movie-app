@@ -5,12 +5,12 @@ import Rating from './Rating'
 function ReviewComponent(props) {
     return (
         <div className="flex-container">
-            <form onSubmit={props.data.handleSubmit}>
+            <form onSubmit={props.handleSubmit}>
                 <label>Name:
                     <input 
                         type="text"
-                        // value={props.data.name} 
-                        // onChange={props.data.handleChange} 
+                        value={props.name} 
+                        onChange={props.handleChange} 
                         name="name" 
                         placeholder="Please enter name"
                     />
@@ -19,15 +19,19 @@ function ReviewComponent(props) {
                 <label>Review:
                     <textarea 
                         type="textarea"
-                        // value={props.data.review} 
-                        // onChange={props.data.handleChange} 
+                        value={props.review} 
+                        onChange={props.handleChange} 
                         name="review" 
                         placeholder="Please enter your thoughts here"
                     />
                 </label>    
                 <br />
                 <div className="rating"> 
-                    <Rating />
+                    <Rating 
+                        value={props.rating} 
+                        onChange={props.handleChange}
+                        name="rating"  
+                    />
                 </div> 
                 <br />
                 <button>Submit</button>

@@ -1,7 +1,4 @@
 import React from 'react'
-import ReviewForm from './ReviewForm'
-import ReviewComponent from './ReviewComponent'
-const reviews = ReviewForm.reviewData
 
 //create array to house reviews per movie
 class ReviewData extends React.Component {
