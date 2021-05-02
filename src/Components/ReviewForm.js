@@ -7,7 +7,8 @@ class ReviewForm extends React.Component {
         this.state = {
             name: '',
             review: '',
-            rating: '' 
+            rating: '',
+            title: 'how do i choose the movie that the review is attached to',
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -25,7 +26,8 @@ class ReviewForm extends React.Component {
         const reviewData = {
             name: this.name.value,
             review: this.review.value,
-            rating: this.rating.value
+            rating: this.rating.value,
+            title: this.title.value,
         }
         return reviewData;
     }

@@ -3,6 +3,7 @@ import ReviewForm from './ReviewForm'
 import ReviewComponent from './ReviewComponent'
 const reviews = ReviewForm.reviewData
 
+//create array to house reviews per movie
 class ReviewData extends React.Component {
     constructor(props) {
         super(props);
@@ -21,10 +22,6 @@ class ReviewData extends React.Component {
             };
         });
     };
-
-    // ratingAve(ratings) {
-    //     return ratings.reduce((a, b) => (a + b)) / ratings.length;
-    // }
 
     render() {
         return(

@@ -1,7 +1,7 @@
 import React from 'react'
 
 //referenced from bbbootstrap.com/snippets
-
+//provides graphic but need to record rating, add rating to review, add rating to average of all reviews per movie
 function Rating() {
     return (
         <div className="rating">
@@ -14,3 +14,7 @@ function Rating() {
     )
 }
 export default Rating;
+
+// ratingAve(ratings) {
+    //     return ratings.reduce((a, b) => (a + b)) / ratings.length;
+    // }

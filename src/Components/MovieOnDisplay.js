@@ -6,6 +6,7 @@ import movieData from './movieData';
 // import ReviewList from './ReviewList';
 // import ReviewData from './ReviewData';
 
+//no longer used at this time, intended to display individual movies when clicked in overall movie list
 class MovieOnDisplay extends React.Component {
     constructor(props) {
         super(props)

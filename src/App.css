@@ -22,37 +22,51 @@ p {
 }
 
 .container {
-  
+  display: grid;
+  grid-template-columns: 300 px 300px 300px;
 }
 
 .movie-card{
   border: 5px solid rgb(227,154,51);
   width: 700px;
   padding: 10px;
-  display: grid;
-  grid-template-columns: 300 px 300px 300px;
+  
+}
+
+form label {
+  display: inline-block;
+  text-align: right;
+  padding: 5px;
 }
 
 .reviewForm {
-  border: 2px solid rgb(182,116,59)
+  border: 2px solid rgb(182,116,59);
+  
  
 }
+
+/*reviewer name field*/
 input {
   display: box;
+  box-sizing: border-box;
   width: 400px;
   height: 25px;
   padding-left: 5px;
 
 }
 
+/*review text field*/
 textarea {
   display: outside;
+  box-sizing: border-box;
   width: 600px;
   height: 200px;
   padding-left: 5px;
+  vertical-align: top;
   
 }
 
+/*star rating formatting*/
 .rating {
   display: flex;
   flex-direction: row-reverse;

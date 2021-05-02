@@ -1,6 +1,7 @@
 import React from 'react';
 import Rating from './Rating'
 
+//text and rating review to be added to movie review array, need to add way to associate each review with the movie it references
 function ReviewComponent(props) {
     return (
         <div className="flex-container">
@@ -15,7 +16,7 @@ function ReviewComponent(props) {
                     />
                 </label>    
                 <br />
-                <label className="commentBox">Review:
+                <label>Review:
                     <textarea 
                         type="textarea"
                         // value={props.data.review} 
@@ -31,11 +32,7 @@ function ReviewComponent(props) {
                 <br />
                 <button>Submit</button>
             </form>
-            {/* <hr />
-            <h2> Review:</h2>
-            <p>Your Name: {props.data.name}</p>
-            <p>Your Review: {props.data.review}</p>
-            <p>Your Rating: {props.data.rating}</p> */}
+            
         </div>
     ) 
 }
