@@ -3,7 +3,7 @@ import Movie from './Movie';
 import movieData from './movieData';
 
 //displays Movie components and their data
-//issue with images not showing and need to figure out how to display average of all star ratings
+//need to figure out how to display average of all star ratings
 function MovieList() {
   return (
     <div className="movie-container">

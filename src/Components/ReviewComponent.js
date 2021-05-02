@@ -36,7 +36,6 @@ function ReviewComponent(props) {
                 <br />
                 <button>Submit</button>
             </form>
-            
         </div>
     ) 
 }
