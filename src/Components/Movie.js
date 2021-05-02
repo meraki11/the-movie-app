@@ -1,16 +1,22 @@
 import React from 'react';
-// import MovieList from './Components/MovieList';
+import ReviewForm from './ReviewForm';
+// import ReviewList from './ReviewList';
 
 function Movie(props) {
-    console.log(props)
     return (
-        <div>
-            <h3>Movie Title:{props.title}</h3>
+        <div className="movie-card">
+            <h3>Movie Title: {props.title}</h3>
             <img src={props.imgUrl}/>
-            <p>Synopsis: {props.synopsis}</p>
+            <p className="summary">Synopsis: {props.synopsis}</p>
             <span>{props.rating}</span>
+            <div className="reviewForm">
+                <ReviewForm />
+            </div>
+            <div>
+                {/* <ReviewList /> */}
+            </div>
         </div>
-    )
+    ) 
 }
 
 export default Movie;
